@@ -1,302 +1,100 @@
 <template>
-  <div class="shopping-cart">
-        <h1>Harry's Shopping Cart</h1>
-        <div class="cart-container">
-            <div class="cart-list">
-                <div class="cart-list-item">
-                    <img src="@/assets/img/DragonLiver.png" alt="Dragon Liver" class="product-image">
-                    <div class="item-details-with-actions">
-                        <div class="item-details">
-                            <h2>Dragon Liver</h2>
-                            <p class="price">$1500</p>
-                            <p class="in-stock-status"> <i class="fa-solid fa-check"></i> In stock</p>
-                        </div>
-                        <div class="item-actions">
-                            <div class="quantity-selector">
-                                <button class="quantity-change-button">−</button>
-                                <input type="text" class="quantity-input" value="3" aria-label="quantity">
-                                <button class="quantity-change-button">+</button>
-                            </div>
-                            <button class="remove-item">✕</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-list-item">
-                    <img src="@/assets/img/GoldenSnitch.png" alt="Golden Snitch" class="product-image">
-                    <div class="item-details-with-actions">
-                        <div class="item-details">
-                            <h2>Golden Snitch</h2>
-                            <p class="price">$600</p>
-                            <p class="in-stock-status"> <i class="fa-solid fa-check"></i> In stock</p>
-                        </div>
-                        <div class="item-actions">
-                            <div class="quantity-selector">
-                                <button class="quantity-change-button">−</button>
-                                <input type="text" class="quantity-input" value="2" aria-label="quantity">
-                                <button class="quantity-change-button">+</button>
-                            </div>
-                            <button class="remove-item">✕</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-list-item">
-                    <img src="@/assets/img/UnicornTailHair.png" alt="Unicorn Tail Hair" class="product-image">
-                    <div class="item-details-with-actions">
-                        <div class="item-details">
-                            <h2>Unicorn Tail Hair</h2>
-                            <p class="price">$1200</p>
-                            <p class="on-backorder-status"> <i class="fa-solid fa-hourglass-half"></i> On backorder</p>
-                        </div>
-                        <div class="item-actions">
-                            <div class="quantity-selector">
-                                <button class="quantity-change-button">−</button>
-                                <input type="text" class="quantity-input" value="1" aria-label="quantity">
-                                <button class="quantity-change-button">+</button>
-                            </div>
-                            <button class="remove-item">✕</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-list-item">
-                    <img src="@/assets/img/Wand.jpg" alt="Wand" class="product-image">
-                    <div class="item-details-with-actions">
-                        <div class="item-details">
-                            <h2>Wand</h2>
-                            <p class="price">$2000</p>
-                            <p class="in-stock-status"> <i class="fa-solid fa-check"></i> In stock</p>
-                        </div>
-                        <div class="item-actions">
-                            <div class="quantity-selector">
-                                <button class="quantity-change-button">−</button>
-                                <input type="text" class="quantity-input" value="1" aria-label="quantity">
-                                <button class="quantity-change-button">+</button>
-                            </div>
-                            <button class="remove-item">✕</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-list-item">
-                    <img src="@/assets/img/Nimbus2000.jpg" alt="Nimbus 2000" class="product-image">
-                    <div class="item-details-with-actions">
-                        <div class="item-details">
-                            <h2>Nimbus 2000</h2>
-                            <p class="price">$5000</p>
-                            <p class="in-stock-status"> <i class="fa-solid fa-check"></i> In stock</p>
-                        </div>
-                        <div class="item-actions">
-                            <div class="quantity-selector">
-                                <button class="quantity-change-button">−</button>
-                                <input type="text" class="quantity-input" value="1" aria-label="quantity">
-                                <button class="quantity-change-button">+</button>
-                            </div>
-                            <button class="remove-item">✕</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="order-summary">
-                <h2>Order summary</h2>
-                <button class="toggle-details-button">Hide Details</button>
-                <div class="">
-                    <div class="summary-item">
-                        <span>Subtotal</span>
-                        <span>$13900</span>
-                    </div>
-                    <div class="summary-item">
-                        <span>Shipping estimate</span>
-                        <span>$100</span>
-                    </div>
-                    <div class="summary-item">
-                        <span>Tax estimate</span>
-                        <span>$1112</span>
-                    </div>
-                </div>
-                <div class="summary-total">
-                    <strong>Order total</strong>
-                    <strong>$15112</strong>
-                </div>
-                <button class="checkout-button">Checkout</button>
-            </div>
-        </div>
-    </div>
-  </template>
-  <script setup></script>
+  <h1>message: {{ message }}</h1>
 
-<style scoped>
- /* Styles for the shopping cart */
-        .shopping-cart {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
+  <hr />
 
-        /* Styles for the cart title */
-        h1 {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+  <h1>number: {{ number }}</h1>
 
-        /* Styles for the cart list and order summary */
-        .cart-container {
-            display: flex;
-            align-items: flex-start;
-            max-width: 1200px;
-            margin: auto;
-        }
+  <h1>doubleNum(50): {{ doubleNum(50) }}</h1>
 
-        .cart-list {
-            flex-grow: 2;
-            margin-right: 20px;
-        }
+  <h1>number * 2 = {{ number * 2 }}</h1>
 
-        .order-summary {
-            flex-basis: 300px;
-            background-color: #f9fafb;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+  <h1>
+    {{ number > 150 ? 'number is great than 150' : 'number is less than 150' }}
+  </h1>
 
-        /* Styles for the cart list item */
-        .cart-list-item {
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            padding: 10px;
-        }
+  <h1 v-text="number"></h1>
 
-        .product-image {
-            width: 100px;
-            margin-right: 10px;
-        }
+  <hr />
 
-        .item-details-with-actions {
-            display: flex;
-            flex-grow: 1;
-            margin-left: 10px;
-        }
+  <h1>harry: {{ harry }}</h1>
 
-        .item-details {
-            flex-grow: 1;
-        }
+  <h1>harry.name: {{ harry.name }}</h1>
 
-        .item-actions {
-            display: flex;
-            align-items: center;
-        }
+  <h1>hogwartsWizards: {{ hogwartsWizards }}</h1>
 
-        .price {
-            font-size: 0.9em;
-            color: #666;
-        }
+  <h1>hogwartsWizards[0]: {{ hogwartsWizards[0] }}</h1>
+  <hr />
 
-        .in-stock-status {
-            font-size: 0.9em;
-            color: green;
-        }
+  <h1>rawHtml: {{ rawHtml }}</h1>
 
-        .on-backorder-status {
-            font-size: 0.9em;
-            color: red;
-        }
+  <h1 v-text="rawHtml"></h1>
 
-        .quantity-selector {
-            display: flex;
-            border: 1px solid #c1c1c1;
-            border-radius: 8px;
-            overflow: hidden;
-            /* Ensures the children do not break the rounded corners */
-        }
+  <h1 v-html="rawHtml"></h1>
+</template>
 
-        .quantity-change-button {
-            background-color: #ffffff;
-            border: none;
-            padding: 10px 12px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.2s;
-        }
+<script setup>
+let message = 'Hello, Vue!'
+let number = 50
 
-        .quantity-input {
-            border: none;
-            text-align: center;
-            width: 40px;
-            padding: 10px;
-            font-size: 1rem;
-            transition: all 0.2s;
-        }
+function doubleNum(num) {
+  return num * 2
+}
 
-        .quantity-input:focus {
-            outline: none;
-        }
+let harry = {
+  id: 1001,
+  name: 'Harry Potter',
+  house: 'Gryffindor',
+  age: 17, // Age during the final battle of Hogwarts
+  wand: {
+    core: 'Phoenix feather',
+    wood: 'Holly'
+  }
+}
+const hogwartsWizards = [
+  {
+    id: 1001,
+    name: 'Harry Potter',
+    house: 'Gryffindor',
+    age: 17,
+    wand: {
+      core: 'Phoenix feather',
+      wood: 'Holly'
+    }
+  },
+  {
+    id: 1002,
+    name: 'Hermione Granger',
+    house: 'Gryffindor',
+    age: 17,
+    wand: {
+      core: 'Dragon heartstring',
+      wood: 'Vine'
+    }
+  },
+  {
+    id: 1003,
+    name: 'Ron Weasley',
+    house: 'Gryffindor',
+    age: 17,
+    wand: {
+      core: 'Unicorn hair',
+      wood: 'Willow'
+    }
+  },
+  {
+    id: 1004,
+    name: 'Draco Malfoy',
+    house: 'Slytherin',
+    age: 17,
+    wand: {
+      core: 'Dragon heartstring',
+      wood: 'Hawthorn'
+    }
+  }
+]
 
-        .remove-item {
-            background: none;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.2em;
-            margin-left: 20px;
-        }
+let rawHtml = '<span style="color: red">This should be red.</span>'
+</script>
 
-        .quantity-change-button:hover,
-        .quantity-change-button:focus,
-        .quantity-input:focus,
-        .remove-item:hover,
-        .remove-item:focus {
-            background-color: #f2f2f2;
-        }
-
-        /* Styles for the order summary */
-        .toggle-details-button {
-            background-color: #f1f1f1;
-            color: #333;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-
-        .hide-order-details {
-            display: none;
-            /* Hide details by default */
-        }
-
-        .summary-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-        }
-
-        .summary-total {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            padding: 10px 0;
-            border-top: 1px solid #e2e2e2;
-            margin-top: 10px;
-        }
-
-        .checkout-button {
-            background-color: #4F46E5;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            width: 100%;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: all 0.2s;
-            /* smooth transition in and out */
-        }
-
-        .checkout-button:hover {
-            background-color: #4138D9;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-</style>
+<style lang="scss" scoped></style>
